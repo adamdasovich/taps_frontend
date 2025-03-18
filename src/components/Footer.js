@@ -1,12 +1,10 @@
 import React from 'react'
-import logo from '../images/small_logo.png'
 
 const Footer = () => {
   return (
     <footer>
         <section>
             <div className='company-info'>
-                <img src={logo} alt='logo'/>
                 <p>
                     Not a bad watering hole.
                 </p>
