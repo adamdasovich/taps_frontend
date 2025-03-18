@@ -1,0 +1,125 @@
+/* Poll.css - Scoped Styles */
+
+.poll-page-container {
+    background-color: #f9f6f0;
+    position: relative;
+    padding: 60px 0;
+  }
+  
+  .poll-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .poll-header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .poll-header h2 {
+    color: #c8a97e;
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .poll-divider {
+    width: 60%;
+    margin: 15px auto;
+  }
+  
+  .poll-subtitle {
+    color: #d3d3d3;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .poll-reservation-form {
+    padding: 30px;
+  }
+  
+  .poll-reservation-form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .poll-form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .poll-form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .poll-form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .poll-form-group label input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .poll-submit-container {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .poll-submit-button {
+    background-color: #c8a97e;
+    color: #1a1a1a;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .poll-submit-button:hover {
+    background-color: #d4b68c;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .poll-loading-seats {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+    font-style: italic;
+  }
+  
+  .poll-seat-selection-notice {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+    font-style: italic;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
