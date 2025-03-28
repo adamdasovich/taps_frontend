@@ -4,7 +4,7 @@ const ConfirmedBooking = () => {
   return (
     <div className='confirm'>
         <div>
-            <h1>Booking has been <span style={{color: 'red', background: 'yellow'}}>confirmed!</span></h1>
+            <h1>Booking has been <span style={{color: 'purple'}}>confirmed!</span></h1>
         </div>
 
     </div>
