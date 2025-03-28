@@ -14,7 +14,7 @@ function CreatePoll() {
     setError('');
     setMessage('');
 
-    axios.post('http://localhost:8000/poll/create/', {
+    axios.post('https://taps-backend.onrender.com/poll/create/', {
       movie1: movie1,
       movie2: movie2,
       movie3: movie3,

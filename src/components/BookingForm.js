@@ -183,7 +183,7 @@ const BookingForm = (props) => {
             
             console.log(`Fetching reserved seats for date=${date} and time=${formattedTime}`);
             
-            const apiUrl = `http://localhost:8000/reservations/reserved_seats/?date=${date}&time=${formattedTime}`;
+            const apiUrl = `https://taps-backend.onrender.com/reservations/reserved_seats/?date=${date}&time=${formattedTime}`;
             console.log(`API URL: ${apiUrl}`);
             
             try {
@@ -259,7 +259,7 @@ const BookingForm = (props) => {
         setIsSubmitting(true);
         setFormError(null);
         
-        fetch('http://localhost:8000/reservations/', {
+        fetch('https://taps-backend.onrender.com/reservations/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

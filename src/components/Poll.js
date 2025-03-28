@@ -8,7 +8,7 @@ function Poll() {
   const [hasVoted, setHasVoted] = useState(false);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/poll/')
+    axios.get('https://taps-backend.onrender.com/poll/')
       .then(response => {
         setPoll(response.data);
         const voted = localStorage.getItem(`voted_poll_${response.data.id}`);
@@ -22,7 +22,7 @@ function Poll() {
   const handleVote = () => {
     if (!selectedMovie || !poll || hasVoted) return;
 
-    axios.put(`http://localhost:8000/poll/${poll.id}/vote/`, { movie: selectedMovie })
+    axios.put(`https://taps-backend.onrender.com/poll/${poll.id}/vote/`, { movie: selectedMovie })
       .then(response => {
         setPoll(response.data);
         setHasVoted(true);
