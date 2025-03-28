@@ -161,7 +161,7 @@ a{
 .header {
   background-color: #1a1a1a;
   padding: 60px 0;
-  background-image: url('https://api.placeholder.com/400/320'); /* Optional: Replace with a wood texture or pub background */
+  background-image: url('./images/Taps+&+Corks_FINAL_-192_websize.jpg'); /* Optional: Replace with a wood texture or pub background */
   background-blend-mode: overlay;
   position: relative;
   transition: all 0.5s ease;
