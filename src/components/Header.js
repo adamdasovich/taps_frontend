@@ -45,7 +45,7 @@ const Header = () => {
           <p>We are Cobourg's place to talk nonsense with a modern twist.</p>
           
           <Link to='/booking'>
-            <button aria-label='On Click' className="reserve-button" style={{marginRight: '20px'}}>
+            <button aria-label='On Click' className="reserve-button" style={{marginRight: '20px', marginBottom: '20px'}}>
               <span className="button-text">Reserve Table</span>
               <span className="button-icon">🍺</span>
             </button>
