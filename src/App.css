@@ -1173,3 +1173,141 @@ h3 {
   .hidden{
     display: none;
   }
+
+  /* Add these updates to your CSS file */
+
+/* Ensure proper base responsive setup */
+html, body {
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  width: 100%;
+  position: relative;
+}
+
+/* Fix for the fixed width on company info paragraph */
+.company-info p {
+  width: 100%;
+  max-width: 320px;
+}
+
+/* Improve responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Better mobile padding for header sections */
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 70px; /* Match the mobile navbar height */
+  }
+  
+  /* Make sure paragraphs don't overflow */
+  p {
+    width: 100%;
+  }
+  
+  /* Adjust banner and header content */
+  .banner p {
+    max-width: 100%;
+  }
+  
+  /* Form improvements for mobile */
+  .booking-form-container {
+    margin: 0 10px;
+    width: auto;
+  }
+  
+  /* Fix for seating layout */
+  .seating-layout {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Fix seat sizing on very small screens */
+  .seat {
+    width: 35px;
+    height: 35px;
+    margin: 2px;
+  }
+  
+  /* Fix scrollable areas that might get cut off */
+  .seating-layout-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  /* Fix the stacked nav links */
+  .nav-links.visible {
+    width: 100%;
+    overflow-y: auto;
+    max-height: calc(100vh - 70px);
+  }
+  
+  /* Ensure buttons don't overflow */
+  .reserve-button, .view-menu-btn, .submit-button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Fix for footer content */
+  .company-info {
+    min-width: unset;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust menu items for better mobile display */
+  .menu-items {
+    width: 100%;
+  }
+  
+  /* Ensure proper overflow for beer descriptions */
+  .beer-description {
+    height: auto;
+    max-height: 63px;
+  }
+}
+
+/* Add a smaller breakpoint for very small screens */
+@media screen and (max-width: 480px) {
+  /* Further reduce padding */
+  .header section, .menu-container, footer section {
+    padding: 10px 5%;
+  }
+  
+  /* Make titles more compact */
+  h2 {
+    font-size: 28px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  /* Make the navbar elements more compact */
+  .navbar {
+    height: 60px;
+  }
+  
+  body {
+    padding-top: 60px;
+  }
+  
+  .nav-logo {
+    height: 40px;
+  }
+  
+  /* Adjust form elements for very small screens */
+  .booking-input {
+    padding: 10px;
+  }
+  
+  /* Make the seating layout work on very small screens */
+  .seat {
+    width: 30px;
+    height: 30px;
+    font-size: 9px;
+  }
+}
